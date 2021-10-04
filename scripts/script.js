@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function(event) {
+    //Аккордеон на главнйо странице
     if (document.querySelectorAll('#js-accordeon').length !== 0){
         const content = document.querySelector('#js-accordeon-content')
         const btn = document.querySelector('.main__section-bot .js-btn').addEventListener('click', function(button){
@@ -17,11 +18,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
             }
         })
     } 
+
+    //Генерация рандомных картинок
     if(document.querySelectorAll('.gallery').length !== 0){
         const btn = document.querySelector('js-generate')
         const imgBlocks = document.querySelectorAll('')
 
-        function generate(){
+        function generate(arr){
 
         }
     }
