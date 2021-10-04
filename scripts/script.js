@@ -17,4 +17,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
             }
         })
     } 
+    if(document.querySelectorAll('.gallery').length !== 0){
+        const btn = document.querySelector('js-generate')
+        const imgBlocks = document.querySelectorAll('')
+
+        function generate(){
+
+        }
+    }
 });

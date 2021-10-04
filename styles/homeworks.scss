@@ -1,0 +1,52 @@
+
+.wrapper {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    background-color: #fff;
+    border-radius: 30px;
+    width: 100%;
+    padding: 20px;
+    justify-content: start;
+    .div {
+        display: flex;
+        height: 100px;
+        p {
+            margin: auto;
+        }
+
+    }
+
+    .div {
+        height: 1 1;
+        width: 300px;
+        height: 300px;
+        &--1 {}
+
+        &--2 {}
+
+        &--3 {
+        }
+
+    }
+    
+}
+.main--homework{
+    flex-direction: column;
+}
+.main{
+    
+    &__title{
+        flex: 1 1 100%;
+        display: flex;
+        justify-content: center;
+        a{
+            font-family: 'Nunito', sans-serif;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            padding: 10px;
+
+        }
+    }
+}

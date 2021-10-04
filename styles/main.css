@@ -1,3 +1,4 @@
+@import url(../styles/homeworks.css);
 body {
   font-family: 'Nunito', sans-serif;
 }
@@ -54,8 +55,6 @@ body {
 }
 
 .header__nav {
-  margin: 0;
-  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -65,7 +64,6 @@ body {
 }
 
 .header__nav li {
-  padding: 20px;
   cursor: pointer;
   list-style-type: none;
   -webkit-transition: all 0.1s linear;
@@ -73,6 +71,7 @@ body {
 }
 
 .header__nav li a {
+  padding: 20px 20px;
   font-size: 16px;
   font-weight: bold;
   text-decoration: none;
@@ -84,7 +83,6 @@ body {
 .header__nav li:hover {
   -webkit-transition: all 0.1s linear;
   transition: all 0.1s linear;
-  background-color: #535353;
 }
 
 .header__nav li:hover a {
@@ -97,7 +95,6 @@ body {
   display: flex;
   -webkit-column-gap: 10px;
           column-gap: 10px;
-  height: 600px;
 }
 
 .main__section-title {
