@@ -20,12 +20,22 @@ document.addEventListener("DOMContentLoaded", function(event) {
     } 
 
     //Генерация рандомных картинок
-    if(document.querySelectorAll('.gallery').length !== 0){
-        const btn = document.querySelector('js-generate')
-        const imgBlocks = document.querySelectorAll('')
+    const imgBlock = document.querySelector('.js-gallery')
+    const btn = document.querySelectorAll('.js-generate a').forEach(el => {
+        el.addEventListener('click', (btn) => {
+            let currentAttr = el.getAttribute('data-place')
+            generateGallery(imgBlock, currentAttr)
+        })
+    })
 
-        function generate(arr){
 
-        }
+    function generateGallery(arr, place){
+        let block = document.createElement('div')
+        block.classList.add('div')
+        let img = document.createElement('img')
+        img.setAttribute('src',`https://loremflickr.com/500/500/${place}?random=${Math.random()}`)
+        block.insertAdjacentElement("afterbegin", img)
+        imgBlock.insertAdjacentElement("beforeend", block)
     }
+
 });
