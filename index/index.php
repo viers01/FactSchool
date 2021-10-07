@@ -69,7 +69,11 @@
                 </section>
             </main>
             <section class="main__section main__section-close">
-                Какой то текст
+                <?php  date_default_timezone_set("Etc/GMT-5"); echo 'Текущее время: '.(date('H:i').'.&nbsp');if(strtotime(date('H:i')) > strtotime('23:00') && strtotime('08:00')):?>
+                <div class="block">
+                    Сейчас ночь
+                </div>
+                <?php endif;?>
             </section>
         </div>
     </div>
