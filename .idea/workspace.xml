@@ -7,10 +7,6 @@
     <list default="true" id="ee669442-d0f1-48b0-9156-10ed8e39859b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index/arrays.php" beforeDir="false" afterPath="$PROJECT_DIR$/index/arrays.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/homeworks.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/homeworks.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/homeworks.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/styles/homeworks.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/styles/main.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/main.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,7 +78,7 @@
       <workItem from="1633702935492" duration="4234000" />
       <workItem from="1633708603965" duration="33000" />
       <workItem from="1633887020910" duration="9366000" />
-      <workItem from="1633898026457" duration="226000" />
+      <workItem from="1633898026457" duration="324000" />
     </task>
     <servers />
   </component>

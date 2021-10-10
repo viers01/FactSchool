@@ -17,6 +17,7 @@
     <div class="container">
         <? include 'components/header.php'?>
         <section class="arrays">
+            <h1>Работа с массивами</h1>
             <div class="arrays__item">
                 <h2>Задание 1</h2>
                 <?
