@@ -273,3 +273,20 @@ body {
 .wrapper{
     margin-top: 0;
 }
+.arrays{
+    background-color: white;
+    border-radius: 30px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    &__item{
+        flex: 0 1 200px;
+        margin: 20px;
+        padding: 20px;
+        border-radius: 30px;
+        background-color: rgb(190, 190, 190);
+        h2 {
+            text-align: center;
+        }
+    }
+}

@@ -45,17 +45,4 @@
       -ms-flex-direction: column;
           flex-direction: column;
 }
-
-@media screen and (max-width: 768px) {
-  .main__title {
-    text-align: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .main__title a {
-    font-size: 16px;
-  }
-}
 /*# sourceMappingURL=homeworks.css.map */

@@ -17,50 +17,63 @@
     <div class="container">
         <? include 'components/header.php'?>
         <section class="arrays">
-            <?
-            $arr1 = array();
+            <div class="arrays__item">
+                <h2>Задание 1</h2>
+                <?
+                $arr1 = array();
 
-            for($i = 0; $i <= 5;$i++){
-                $randNum = rand(0,10);
-                array_push($arr1, $randNum);
-            }
-            foreach ($arr1 as $value){
-                if ($value % 2 == 0){
-                    echo "<b>{$value}</b><br>";
-                } else {
-                    echo "{$value}<br>";
+                for($i = 0; $i <= 5;$i++){
+                    $randNum = rand(0,10);
+                    array_push($arr1, $randNum);
                 }
-            }
-            ?>
-
-            <?
-            $arr2 = array(
+                foreach ($arr1 as $value){
+                    if ($value % 2 == 0){
+                        echo "<b>{$value}</b><br>";
+                    } else {
+                        echo "{$value}<br>";
+                    }
+                }
+                ?>
+            </div>
+            <div class="arrays__item">
+                <h2>Задание 2</h2>
+                <?
+                $arr2 = array(
                     'Home1' => array('Alice', 'Brok', 'Nina'),
                     'Home2' => array('Nancy', 'Aron', 'Anna'),
                     'Home3' => array('Lanny', 'Angela', 'Karma')
-                    );
-            foreach ($arr2 as $value){
-                if (is_array($value)){
-                    foreach ($value as $item){
-                        if ($item[0] == 'A'){
-                            echo "{$item}<br>";
+                );
+                foreach ($arr2 as $value){
+                    if (is_array($value)){
+                        foreach ($value as $item){
+                            if ($item[0] == 'A'){
+                                echo "{$item}<br>";
+                            }
                         }
                     }
+                };
+                ?>
+            </div>
+            <div class="arrays__item">
+                <h2>Задание 3</h2>
+                <?
+                $arr3 = array(
+                    'Первый набор' => array(1, 3, 2,3,5,6,7),
+                    'Второй набор' => array(7, 5, 1),
+                    'Третий набор' => array(1, 6, 9,5)
+                );
+                echo "Всего элементов в массиве ".count($arr3)."<br>";
+                foreach ($arr3 as $key => $value){
+                    echo "Количество элементов в ".$key." - ".count($value)."<br>";
                 }
-            };
-            ?>
+                ?>
+            </div>
 
-            <?
-            $arr3 = array(
-                'Первый набор' => array(1, 3, 2,3,5,6,7),
-                'Второй набор' => array(7, 5, 1),
-                'Третий набор' => array(1, 6, 9,5)
-            );
-            echo "Всего элементов в массиве ".count($arr3)."<br>";
-            foreach ($arr3 as $key => $value){
-                echo "Количество элементов в ".$key." - ".count($value)."<br>";
-            }
-            ?>
+
+
+            <div class="arrays__item">
+                <h2>Задание 4</h2>
+            </div>
             <?
             $arr4 = array(
                     'Ivanovs' => array('Ivan','Kate', 'Tom' ),

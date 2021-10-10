@@ -398,4 +398,25 @@ body {
 .wrapper {
   margin-top: 0;
 }
+
+.arrays {
+  background-color: white;
+  border-radius: 30px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.arrays__item {
+  width: 25%;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 30px;
+  background-color: #bebebe;
+}
+
+.arrays__item h2 {
+  text-align: center;
+}
 /*# sourceMappingURL=main.css.map */
