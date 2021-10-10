@@ -8,8 +8,6 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -18,14 +16,7 @@
 <body>
     <div class="bg-wrap">
         <div class="container">
-            <header class="header">
-                <ul class="header__nav">
-                    <li class="header__link"><a href="index.html"> Обо мне</a></li>
-                    <li class="header__link"><a href="homeworks.html">Домашние задания</a> </li>
-                    <li class="header__link"><a href="#">Мои проекты</a></li>
-                    <li class="header__link"><a href="#">Мои одногруппники</a></li>
-                </ul>
-            </header>
+            <? include 'components/header.php'?>
             <main class="main">
                 <section class="main__section main__section--left">
                     <div class="main__section-img">
@@ -74,6 +65,18 @@
                     Сейчас ночь :)
                 </div>
                 <?php endif;?>
+                <?php
+                $arr= array();
+                $arr = 'apple';
+                for ($i = 0; $i < 5; $i++){
+                    $randNumver = rand(1, 10);
+                    $arr[$i] = "$randNumver";
+                }
+                $reversed = array_reverse((array)$arr, true);
+                print_r($arr);
+                print_r($reversed);
+
+                ?>
             </section>
         </div>
     </div>
