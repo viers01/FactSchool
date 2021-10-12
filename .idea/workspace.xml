@@ -7,7 +7,7 @@
     <list default="true" id="ee669442-d0f1-48b0-9156-10ed8e39859b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index/arrays.php" beforeDir="false" afterPath="$PROJECT_DIR$/index/arrays.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +27,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4" />
   <component name="ProjectId" id="1ydVERMGpMNk557hzpH6OxtDXCV" />
@@ -78,7 +86,9 @@
       <workItem from="1633702935492" duration="4234000" />
       <workItem from="1633708603965" duration="33000" />
       <workItem from="1633887020910" duration="9366000" />
-      <workItem from="1633898026457" duration="324000" />
+      <workItem from="1633898026457" duration="498000" />
+      <workItem from="1633969975272" duration="1176000" />
+      <workItem from="1634068306456" duration="3969000" />
     </task>
     <servers />
   </component>

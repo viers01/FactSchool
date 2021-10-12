@@ -46,9 +46,26 @@
                                         процессе...</li>
                                 </ul>
                             </div>
-                            <p>Кроме программирования люблю тягать железки в спортзале) Был опыт тренерства нескольких
+                            <?
+                            $aboutStr = "Кроме программирования люблю тягать железки в спортзале) Был опыт тренерства нескольких
                                 человек. Так же раньше вел свой канал в телеграме на автомобильную тематику. Раньше
-                                работал руководителем точки "SUBWAY".<br> С 2020 года стал изучать веб, затянуло </p>
+                                работал руководителем точки 'SUBWAY'. С 2020 года стал изучать веб, затянуло";
+
+                            $firstphrase = explode('.',$aboutStr);
+                            foreach ($firstphrase as $key => $phrase) if ($firstphrase[0] === $phrase )
+                            echo "<p style='color: rgb(247, 169, 53)'>{$phrase}.</p>"; else {
+                                echo "<p>{$phrase}.</p>";
+                            };
+
+//                            $pattern = '/[^ a-zа-яё\d]/ui'; Второй способ - проеобразовать строку и пройтись циклом
+//                            $aboutStrClear = preg_replace($pattern, ' ', $aboutStr );
+//                            $aboutTrim = str_replace(' ', '', $aboutStrClear);
+
+                            $countText = preg_replace ("/[аеуоиоюяАЕОУЮЫЯ]/", "", $aboutStr);
+                            $count = strlen($aboutStr)-strlen($countText);
+                            echo("Количество гласных в этом блоке: $count");
+                            ?>
+
                         </article>
                         <article class="main__section-article main__section-article-2">
                             <h3>Отзыв о уроках</h3>

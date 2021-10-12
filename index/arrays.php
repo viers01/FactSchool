@@ -74,6 +74,25 @@
 
             <div class="arrays__item">
                 <h2>Задание 4</h2>
+                <?
+                $fact = 'Fact';
+                $a = array_splice($fact, 1);
+                echo $a;
+
+
+                ?>
+            </div>
+
+            <div class="arrays__item">
+                <h2>Задание 5 от 08.10</h2>
+                
+                <?
+                $fact = 'Fact';
+                $a = array_splice($fact, 1);
+                echo $a;
+
+
+                ?>
             </div>
             <?
             $arr4 = array(
