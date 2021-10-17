@@ -94,6 +94,7 @@
                 print_r($reversed);
 
                 ?>
+                
             </section>
         </div>
     </div>

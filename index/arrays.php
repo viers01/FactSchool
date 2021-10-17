@@ -21,19 +21,23 @@
             <div class="arrays__item">
                 <h2>Задание 1</h2>
                 <?
-                $arr1 = array();
-
-                for($i = 0; $i <= 5;$i++){
-                    $randNum = rand(0,10);
-                    array_push($arr1, $randNum);
-                }
-                foreach ($arr1 as $value){
-                    if ($value % 2 == 0){
-                        echo "<b>{$value}</b><br>";
-                    } else {
-                        echo "{$value}<br>";
+                //функция вывода чётных чисел
+                function isValue($numbers){
+                    $arr1 = array();
+                    for($i = 0; $i <= $numbers;$i++){
+                        $randNum = rand(0,10);
+                        array_push($arr1, $randNum);
+                    }
+                    foreach ($arr1 as $value){
+                        if ($value % 2 == 0){
+                            echo "<b>{$value}</b><br>";
+                        } else {
+                            echo "{$value}<br>";
+                        }
                     }
                 }
+                isValue(10);
+
                 ?>
             </div>
             <div class="arrays__item">
@@ -44,15 +48,19 @@
                     'Home2' => array('Nancy', 'Aron', 'Anna'),
                     'Home3' => array('Lanny', 'Angela', 'Karma')
                 );
-                foreach ($arr2 as $value){
-                    if (is_array($value)){
-                        foreach ($value as $item){
-                            if ($item[0] == 'A'){
-                                echo "{$item}<br>";
+                //функция вывода всех имен на любую букву во втором аргументе.
+                function searchWords($array, $letter){
+                    foreach ($array as $value){
+                        if (is_array($value)){
+                            foreach ($value as $item){
+                                if ($item[0] == $letter){
+                                    echo "{$item}<br>";
+                                }
                             }
                         }
-                    }
-                };
+                    };
+                }
+                searchWords($arr2, 'A');
                 ?>
             </div>
             <div class="arrays__item">
@@ -63,10 +71,14 @@
                     'Второй набор' => array(7, 5, 1),
                     'Третий набор' => array(1, 6, 9,5)
                 );
-                echo "Всего элементов в массиве ".count($arr3)."<br>";
-                foreach ($arr3 as $key => $value){
-                    echo "Количество элементов в ".$key." - ".count($value)."<br>";
+                //функция подсчета ключей и значений в массиве
+                function countKey($array){
+                    echo "Всего элементов в массиве ".count($array)."<br>";
+                    foreach ($array as $key => $value){
+                        echo "Количество элементов в ".$key." - ".count($value)."<br>";
+                    }
                 }
+                countKey($arr3);
                 ?>
             </div>
 
@@ -75,21 +87,32 @@
             <div class="arrays__item">
                 <h2>Задание 4</h2>
                 <?
-                $fact = 'Fact';
-                $a = array_splice($fact, 1);
-                echo $a;
+                //функция пордсчета дней между датами
+                function countDays($d1, $d2)
+                {
+                    $date1 = strtotime($d1);
+                    $date2 = strtotime($d2);
+                    $seconds = abs($date1 - $date2);
+                    return floor($seconds / 86400);
+                }
 
-
+                echo 'Дней с моего дня рождения'.' '.countDays('1998-03-15 15:34:12', '2021-10-17 18:21:32');
                 ?>
             </div>
 
             <div class="arrays__item">
-                <h2>Задание 5 от 08.10</h2>
-                
+                <h2>Задание 5 (расширение .png)</h2>
                 <?
-                $fact = 'Fact';
-                $a = array_splice($fact, 1);
-                echo $a;
+                function searchFormat($string, $needle){
+                    if (strpos($string, $needle) !== false ){
+                        echo ("Строка {$string} содержит {$needle}");
+                    } else{
+                        echo ("Строка {$string} не содержит {$needle}");
+                    }
+                }
+                searchFormat('picture.png', '.png');
+                echo "<br>";
+                searchFormat('picture.img', '.png');
 
 
                 ?>
@@ -100,9 +123,13 @@
                     'Petrovs' => array('Bob','Ann', 'Tanya' ),
                     'Smith' => array('Kate','Same'),
             );
-
-
             ?>
+            <div class="arrays__item">
+                <h2>Задание 6</h2>
+                <?
+
+                ?>
+            </div>
         </section>
     </div>
 </div>
