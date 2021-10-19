@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ee669442-d0f1-48b0-9156-10ed8e39859b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index/arrays.php" beforeDir="false" afterPath="$PROJECT_DIR$/index/arrays.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index/components/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/index/components/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +42,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -92,7 +90,9 @@
       <workItem from="1634068306456" duration="4137000" />
       <workItem from="1634317355149" duration="2000" />
       <workItem from="1634491065101" duration="4884000" />
-      <workItem from="1634498613930" duration="104000" />
+      <workItem from="1634498613930" duration="733000" />
+      <workItem from="1634576063691" duration="2459000" />
+      <workItem from="1634660309069" duration="8117000" />
     </task>
     <servers />
   </component>
@@ -110,6 +110,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Project$project_html.dat" NAME="project.html Coverage Results" MODIFIED="1632585080006" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="WipCoverageRunner" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
