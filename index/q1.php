@@ -17,5 +17,7 @@ echo 'У вас '.$res.' правильных ответов!'; echo $res > 2? '
 </head>
 <body>
 
+
+
 </body>
 </html>

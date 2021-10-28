@@ -1,3 +1,21 @@
+<?
+
+require_once 'reg.php'; 
+
+$register = new Registration;
+
+
+if(isset($_POST['register'])) {
+    $login   = ($_POST['login']);
+    $password = ($_POST['password']);
+    $register->userRegister($login, $password);
+}
+if (isset($_POST['authorization'])) {
+    $login   = ($_POST['login2']);
+    $password = ($_POST['password2']);
+    $register->userLogin($login, $password);
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,6 +32,29 @@
 </head>
 
 <body>
+<div>
+    <?
+    if($_COOKIE['user'] == ''):?>
+        <h2>Регистрация</h2>
+        <form action="#" method="post">
+            <label for="login">Логин</label>
+            <input id="login" type="text" name='login' placeholder="введите логин">
+            <label for="login">Пароль</label>
+            <input id="name" type="password" name='password' placeholder="введите пароль">
+            <button type="submit" name = "register">Зарегестрировать</button>
+        </form>
+        <h2>Авторизация</h2>
+        <form action="#" method="post">
+            <label for="login">Логин</label>
+            <input id="login" type="text" name='login' placeholder="введите логин">
+            <label for="password">Пароль</label>
+            <input id="password" type="password" name='password' placeholder="введите пароль">
+            <button type="submit" name="authorization">Войти</button>
+        </form>
+        <?else:?>
+            <p>Приветствую тебя, <?=$_COOKIE['user']?></p> 
+        <?endif;?>
+    </div>
     <div class="bg-wrap">
         <div class="container">
             <? include 'components/header.php'?>
